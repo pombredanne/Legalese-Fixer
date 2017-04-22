@@ -6,8 +6,39 @@
 
 import sys
 
-def checkAndEditLegalese():
-	
+exampleList = []
+fixList = []
+dictList = []
+
+def checkAndEditLegalese(fileString):
+	fileStringList = fileString.split()
+	for i in range (0, len(fileStringList)):
+		stringCheckVal = fileStringList[i].lower()
+		if stringCheckVal in exampleList:
+			editString = fixList[exampleList.index(stringCheckVal)]
+			potentialEditList = []
+			if "," not in editString:
+				potentialEditList = [editString]
+			else:
+				editListVal = ""
+			for j in editString:
+				if j == ",":
+					potentialEditList.append(editListVal)
+					editListVal = ""
+				else:
+					editListVal += "j"
+					potentialEditList.append(editListVal)
+			for solution in potentialEditList:
+				if solution.isUpper():
+					if solution == "OMIT" or solution == "REMOVE":
+						fileString.replace(stringCheckVal, "", 1)
+						break
+					pass
+				else:
+					fileString.replace(stringCheckVal, solution, 1)
+					break
+	return fileString
+			
 
 def spellCheck():
 
@@ -26,17 +57,17 @@ def main(argv):
 
 	''' Develop the lists for the dictionary,
 		the fixes, the legalese examples '''
-	exampleList = []
+	global exampleList
 	for exampleLine in legaleseFile:
 		exampleList.append(exampleLine)
 
-	fixList = []
+	global fixList
 	for fixLine in legaleseFixes:
 		fixList.append(fixLine)
 
 	finalList = zip(exampleList, fixList)
 
-	dictList = []
+	global dictList
 	for dictLine in dictFile:
 		dictList.append(dictFile)
 	return 0

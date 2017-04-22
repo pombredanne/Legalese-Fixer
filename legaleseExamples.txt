@@ -1,7 +1,7 @@
 a large number of
 a number of
 ab initio
-accord (verb)
+accord
 accord respect to
 acquire
 acquire knowledge
@@ -25,7 +25,7 @@ at the place
 at the present time
 at this point in time
 at this time
-attempt (verb)
+attempt
 because of the fact that
 cease
 cease and desist
@@ -49,11 +49,11 @@ during the time that
 e.g.
 echelon
 elucidate
-endeavor (verb)
+endeavor
 evince
 excessive number of
 exclusively
-exit (verb)
+exit
 facilitate
 firstly
 secondly
@@ -93,7 +93,7 @@ in reference to
 in regard to
 in the course of
 in the event that
-IN WITNESS WHEREOF
+in witness whereof
 indicate
 individual (noun)
 inquire
@@ -108,7 +108,7 @@ it has been determined that
 it is apparent that
 it is clear that
 it should be noted that
-KNOW YE BY ALL MEN PRESENT
+know ye by all men present
 literally
 locate
 manner
